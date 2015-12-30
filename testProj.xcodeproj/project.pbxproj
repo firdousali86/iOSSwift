@@ -15,6 +15,10 @@
 		8D1EAACB1C33DF0B00CD0182 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1EAAC91C33DF0B00CD0182 /* LaunchScreen.storyboard */; };
 		8D1EAAD61C33DF0B00CD0182 /* testProjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1EAAD51C33DF0B00CD0182 /* testProjTests.swift */; };
 		8D1EAAE11C33DF0B00CD0182 /* testProjUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1EAAE01C33DF0B00CD0182 /* testProjUITests.swift */; };
+		8D1EAAFD1C33F52A00CD0182 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1EAAFC1C33F52A00CD0182 /* BaseController.swift */; };
+		8D1EAAFF1C33F59900CD0182 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1EAAFE1C33F59900CD0182 /* Keys.swift */; };
+		8D1EAB011C33F5AF00CD0182 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1EAB001C33F5AF00CD0182 /* Constant.swift */; };
+		8D1EAB031C33F5B900CD0182 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1EAB021C33F5B900CD0182 /* Enum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +40,8 @@
 
 /* Begin PBXFileReference section */
 		8D1EAABA1C33DF0B00CD0182 /* testProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D1EAABD1C33DF0B00CD0182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D1EAABF1C33DF0B00CD0182 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D1EAABD1C33DF0B00CD0182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = testProj/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		8D1EAABF1C33DF0B00CD0182 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		8D1EAAC21C33DF0B00CD0182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D1EAAC51C33DF0B00CD0182 /* testProj.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testProj.xcdatamodel; sourceTree = "<group>"; };
 		8D1EAAC71C33DF0B00CD0182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		8D1EAADC1C33DF0B00CD0182 /* testProjUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testProjUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1EAAE01C33DF0B00CD0182 /* testProjUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testProjUITests.swift; sourceTree = "<group>"; };
 		8D1EAAE21C33DF0B00CD0182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1EAAFC1C33F52A00CD0182 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		8D1EAAFE1C33F59900CD0182 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		8D1EAB001C33F5AF00CD0182 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		8D1EAB021C33F5B900CD0182 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,12 @@
 		8D1EAABC1C33DF0B00CD0182 /* testProj */ = {
 			isa = PBXGroup;
 			children = (
-				8D1EAABD1C33DF0B00CD0182 /* AppDelegate.swift */,
-				8D1EAABF1C33DF0B00CD0182 /* ViewController.swift */,
+				8D1EAAF21C33F3A800CD0182 /* AppDelegate */,
+				8D1EAAF31C33F3A800CD0182 /* Constants */,
+				8D1EAAF41C33F3A800CD0182 /* Controllers */,
+				8D1EAAF51C33F3A800CD0182 /* Controls */,
+				8D1EAAF61C33F3A800CD0182 /* ExternalLibraries */,
+				8D1EAAF71C33F3A800CD0182 /* Views */,
 				8D1EAAC11C33DF0B00CD0182 /* Main.storyboard */,
 				8D1EAAC71C33DF0B00CD0182 /* Assets.xcassets */,
 				8D1EAAC91C33DF0B00CD0182 /* LaunchScreen.storyboard */,
@@ -126,6 +138,54 @@
 				8D1EAAE21C33DF0B00CD0182 /* Info.plist */,
 			);
 			path = testProjUITests;
+			sourceTree = "<group>";
+		};
+		8D1EAAF21C33F3A800CD0182 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8D1EAABD1C33DF0B00CD0182 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8D1EAAF31C33F3A800CD0182 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8D1EAAFE1C33F59900CD0182 /* Keys.swift */,
+				8D1EAB001C33F5AF00CD0182 /* Constant.swift */,
+				8D1EAB021C33F5B900CD0182 /* Enum.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		8D1EAAF41C33F3A800CD0182 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D1EAABF1C33DF0B00CD0182 /* ViewController.swift */,
+				8D1EAAFC1C33F52A00CD0182 /* BaseController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8D1EAAF51C33F3A800CD0182 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		8D1EAAF61C33F3A800CD0182 /* ExternalLibraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ExternalLibraries;
+			sourceTree = "<group>";
+		};
+		8D1EAAF71C33F3A800CD0182 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +321,11 @@
 			files = (
 				8D1EAAC61C33DF0B00CD0182 /* testProj.xcdatamodeld in Sources */,
 				8D1EAAC01C33DF0B00CD0182 /* ViewController.swift in Sources */,
+				8D1EAAFD1C33F52A00CD0182 /* BaseController.swift in Sources */,
 				8D1EAABE1C33DF0B00CD0182 /* AppDelegate.swift in Sources */,
+				8D1EAB031C33F5B900CD0182 /* Enum.swift in Sources */,
+				8D1EAAFF1C33F59900CD0182 /* Keys.swift in Sources */,
+				8D1EAB011C33F5AF00CD0182 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

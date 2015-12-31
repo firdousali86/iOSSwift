@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C8testProj14BaseController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
 - "loadView"
+- "viewDidLoad"
 - "getViewName"
 depends-top-level:
-- !private "print"
+- !private "StringLiteralType"
+- "ControllerExceptions"
 - !private "=="
 - "String"
 - "UIViewController"
-- !private "!="
-- "ControllerExceptions"
-- "BaseController"
-- !private "StringLiteralType"
-- !private "Utils"
-- !private "NSBundle"
+- !private "print"
 - !private "!"
+- "BaseController"
+- !private "!="
+- !private "NSBundle"
+- !private "Utils"
 depends-member:
 - !private ["PSs9AnyObject", "ControllerExceptions"]
 - !private ["PSs9AnyObject", "NSBundle"]

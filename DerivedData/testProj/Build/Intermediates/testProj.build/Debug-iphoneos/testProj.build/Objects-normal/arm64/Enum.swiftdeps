@@ -7,9 +7,9 @@ provides-member:
 - ["O8testProj20ControllerExceptions", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "ControllerExceptions"
 - "ErrorType"
 - "=="
+- "ControllerExceptions"
 depends-member:
 - !private ["PSs22BidirectionalIndexType", "hashValue"]
 - !private ["PSs21BitwiseOperationsType", "hashValue"]

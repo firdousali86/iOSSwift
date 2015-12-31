@@ -1,12 +1,12 @@
 version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
 options: "432d968dbdbfb2b0097dff81bc179875"
-build_time: [504910943, 117578000]
+build_time: [504911869, 554140000]
 inputs: 
-	"/Users/firdousali/Documents/mobileapps/ios/git/iOSSwift/testProj/Constants/Constant.swift": [504902513, 0]
-	"/Users/firdousali/Documents/mobileapps/ios/git/iOSSwift/testProj/Controllers/BaseController.swift": [504910143, 0]
+	"/Users/firdousali/Documents/mobileapps/ios/git/iOSSwift/testProj/Constants/Enum.swift": [504910051, 0]
+	"/Users/firdousali/Documents/mobileapps/ios/git/iOSSwift/testProj/Views/MainView.swift": [504902734, 0]
 	"/Users/firdousali/Documents/mobileapps/ios/git/iOSSwift/testProj/AppDelegate.swift": [504897431, 0]
 	"/Users/firdousali/Documents/mobileapps/ios/git/iOSSwift/testProj/Controllers/MainController.swift": [504902703, 0]
-	"/Users/firdousali/Documents/mobileapps/ios/git/iOSSwift/testProj/Views/MainView.swift": [504902734, 0]
+	"/Users/firdousali/Documents/mobileapps/ios/git/iOSSwift/testProj/Constants/Constant.swift": [504902513, 0]
 	"/Users/firdousali/Documents/mobileapps/ios/git/iOSSwift/testProj/Constants/Keys.swift": [504897431, 0]
+	"/Users/firdousali/Documents/mobileapps/ios/git/iOSSwift/testProj/Controllers/BaseController.swift": [504910143, 0]
 	"/Users/firdousali/Documents/mobileapps/ios/git/iOSSwift/testProj/Views/BaseView.swift": [504902648, 0]
-	"/Users/firdousali/Documents/mobileapps/ios/git/iOSSwift/testProj/Constants/Enum.swift": [504910051, 0]

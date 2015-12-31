@@ -7,8 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		874BEC841C35AEF8004C4BFB /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874BEC831C35AEF8004C4BFB /* BaseView.swift */; settings = {ASSET_TAGS = (); }; };
+		874BEC861C35AF30004C4BFB /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874BEC851C35AF30004C4BFB /* MainController.swift */; settings = {ASSET_TAGS = (); }; };
+		874BEC881C35AF4E004C4BFB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874BEC871C35AF4E004C4BFB /* MainView.swift */; settings = {ASSET_TAGS = (); }; };
+		874BEC921C35C30F004C4BFB /* JsonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 874BEC8F1C35C30F004C4BFB /* JsonHelper.m */; settings = {ASSET_TAGS = (); }; };
+		874BEC931C35C30F004C4BFB /* StringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 874BEC911C35C30F004C4BFB /* StringHelper.m */; settings = {ASSET_TAGS = (); }; };
+		874BECA61C35C355004C4BFB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 874BEC971C35C355004C4BFB /* MBProgressHUD.m */; settings = {ASSET_TAGS = (); }; };
+		874BECA71C35C355004C4BFB /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 874BEC9A1C35C355004C4BFB /* CDataScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		874BECA81C35C355004C4BFB /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 874BEC9C1C35C355004C4BFB /* CDataScanner_Extensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		874BECA91C35C355004C4BFB /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 874BEC9E1C35C355004C4BFB /* CJSONDeserializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		874BECAA1C35C355004C4BFB /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 874BECA01C35C355004C4BFB /* CJSONScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		874BECAB1C35C355004C4BFB /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 874BECA21C35C355004C4BFB /* CJSONSerializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		874BECAC1C35C355004C4BFB /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 874BECA51C35C355004C4BFB /* NSDictionary_JSONExtensions.m */; settings = {ASSET_TAGS = (); }; };
+		874BECAF1C35C3BC004C4BFB /* PList.m in Sources */ = {isa = PBXBuildFile; fileRef = 874BECAE1C35C3BC004C4BFB /* PList.m */; settings = {ASSET_TAGS = (); }; };
+		874BECB21C35C4BA004C4BFB /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 874BECB11C35C4BA004C4BFB /* Utils.m */; settings = {ASSET_TAGS = (); }; };
 		8D1EAABE1C33DF0B00CD0182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1EAABD1C33DF0B00CD0182 /* AppDelegate.swift */; };
-		8D1EAAC01C33DF0B00CD0182 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1EAABF1C33DF0B00CD0182 /* ViewController.swift */; };
 		8D1EAAC31C33DF0B00CD0182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1EAAC11C33DF0B00CD0182 /* Main.storyboard */; };
 		8D1EAAC61C33DF0B00CD0182 /* testProj.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D1EAAC41C33DF0B00CD0182 /* testProj.xcdatamodeld */; };
 		8D1EAAC81C33DF0B00CD0182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1EAAC71C33DF0B00CD0182 /* Assets.xcassets */; };
@@ -39,9 +52,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		874BEC831C35AEF8004C4BFB /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		874BEC851C35AF30004C4BFB /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		874BEC871C35AF4E004C4BFB /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		874BEC8E1C35C30F004C4BFB /* JsonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonHelper.h; sourceTree = "<group>"; };
+		874BEC8F1C35C30F004C4BFB /* JsonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonHelper.m; sourceTree = "<group>"; };
+		874BEC901C35C30F004C4BFB /* StringHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringHelper.h; sourceTree = "<group>"; };
+		874BEC911C35C30F004C4BFB /* StringHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringHelper.m; sourceTree = "<group>"; };
+		874BEC961C35C355004C4BFB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		874BEC971C35C355004C4BFB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		874BEC991C35C355004C4BFB /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
+		874BEC9A1C35C355004C4BFB /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
+		874BEC9B1C35C355004C4BFB /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
+		874BEC9C1C35C355004C4BFB /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
+		874BEC9D1C35C355004C4BFB /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		874BEC9E1C35C355004C4BFB /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		874BEC9F1C35C355004C4BFB /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
+		874BECA01C35C355004C4BFB /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner.m; sourceTree = "<group>"; };
+		874BECA11C35C355004C4BFB /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		874BECA21C35C355004C4BFB /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		874BECA31C35C355004C4BFB /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
+		874BECA41C35C355004C4BFB /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		874BECA51C35C355004C4BFB /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		874BECAD1C35C3BC004C4BFB /* PList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PList.h; sourceTree = "<group>"; };
+		874BECAE1C35C3BC004C4BFB /* PList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PList.m; sourceTree = "<group>"; };
+		874BECB01C35C4BA004C4BFB /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		874BECB11C35C4BA004C4BFB /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		874BECF51C35C824004C4BFB /* testProj-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "testProj-Bridging-Header.h"; sourceTree = "<group>"; };
 		8D1EAABA1C33DF0B00CD0182 /* testProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1EAABD1C33DF0B00CD0182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = testProj/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
-		8D1EAABF1C33DF0B00CD0182 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		8D1EAAC21C33DF0B00CD0182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D1EAAC51C33DF0B00CD0182 /* testProj.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testProj.xcdatamodel; sourceTree = "<group>"; };
 		8D1EAAC71C33DF0B00CD0182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,6 +123,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		874BEC891C35C2A0004C4BFB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				874BECB01C35C4BA004C4BFB /* Utils.h */,
+				874BECB11C35C4BA004C4BFB /* Utils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		874BEC8D1C35C30F004C4BFB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				874BECAD1C35C3BC004C4BFB /* PList.h */,
+				874BECAE1C35C3BC004C4BFB /* PList.m */,
+				874BEC8E1C35C30F004C4BFB /* JsonHelper.h */,
+				874BEC8F1C35C30F004C4BFB /* JsonHelper.m */,
+				874BEC901C35C30F004C4BFB /* StringHelper.h */,
+				874BEC911C35C30F004C4BFB /* StringHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		874BEC941C35C355004C4BFB /* ExternalLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				874BEC951C35C355004C4BFB /* MBProgressHUD */,
+				874BEC981C35C355004C4BFB /* TouchJSON */,
+			);
+			path = ExternalLibraries;
+			sourceTree = "<group>";
+		};
+		874BEC951C35C355004C4BFB /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				874BEC961C35C355004C4BFB /* MBProgressHUD.h */,
+				874BEC971C35C355004C4BFB /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		874BEC981C35C355004C4BFB /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				874BEC991C35C355004C4BFB /* CDataScanner.h */,
+				874BEC9A1C35C355004C4BFB /* CDataScanner.m */,
+				874BEC9B1C35C355004C4BFB /* CDataScanner_Extensions.h */,
+				874BEC9C1C35C355004C4BFB /* CDataScanner_Extensions.m */,
+				874BEC9D1C35C355004C4BFB /* CJSONDeserializer.h */,
+				874BEC9E1C35C355004C4BFB /* CJSONDeserializer.m */,
+				874BEC9F1C35C355004C4BFB /* CJSONScanner.h */,
+				874BECA01C35C355004C4BFB /* CJSONScanner.m */,
+				874BECA11C35C355004C4BFB /* CJSONSerializer.h */,
+				874BECA21C35C355004C4BFB /* CJSONSerializer.m */,
+				874BECA31C35C355004C4BFB /* JSONRepresentation.h */,
+				874BECA41C35C355004C4BFB /* NSDictionary_JSONExtensions.h */,
+				874BECA51C35C355004C4BFB /* NSDictionary_JSONExtensions.m */,
+			);
+			path = TouchJSON;
+			sourceTree = "<group>";
+		};
 		8D1EAAB11C33DF0B00CD0182 = {
 			isa = PBXGroup;
 			children = (
@@ -107,9 +206,13 @@
 		8D1EAABC1C33DF0B00CD0182 /* testProj */ = {
 			isa = PBXGroup;
 			children = (
+				874BECF51C35C824004C4BFB /* testProj-Bridging-Header.h */,
 				8D1EAAF21C33F3A800CD0182 /* AppDelegate */,
 				8D1EAAF31C33F3A800CD0182 /* Constants */,
 				8D1EAAF41C33F3A800CD0182 /* Controllers */,
+				874BEC941C35C355004C4BFB /* ExternalLibraries */,
+				874BEC8D1C35C30F004C4BFB /* Helpers */,
+				874BEC891C35C2A0004C4BFB /* Utils */,
 				8D1EAAF51C33F3A800CD0182 /* Controls */,
 				8D1EAAF61C33F3A800CD0182 /* ExternalLibraries */,
 				8D1EAAF71C33F3A800CD0182 /* Views */,
@@ -161,8 +264,8 @@
 		8D1EAAF41C33F3A800CD0182 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8D1EAABF1C33DF0B00CD0182 /* ViewController.swift */,
 				8D1EAAFC1C33F52A00CD0182 /* BaseController.swift */,
+				874BEC851C35AF30004C4BFB /* MainController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,6 +287,8 @@
 		8D1EAAF71C33F3A800CD0182 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				874BEC831C35AEF8004C4BFB /* BaseView.swift */,
+				874BEC871C35AF4E004C4BFB /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -319,13 +424,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				874BEC861C35AF30004C4BFB /* MainController.swift in Sources */,
+				874BEC881C35AF4E004C4BFB /* MainView.swift in Sources */,
+				874BEC921C35C30F004C4BFB /* JsonHelper.m in Sources */,
+				874BECB21C35C4BA004C4BFB /* Utils.m in Sources */,
 				8D1EAAC61C33DF0B00CD0182 /* testProj.xcdatamodeld in Sources */,
-				8D1EAAC01C33DF0B00CD0182 /* ViewController.swift in Sources */,
+				874BEC931C35C30F004C4BFB /* StringHelper.m in Sources */,
+				874BECAC1C35C355004C4BFB /* NSDictionary_JSONExtensions.m in Sources */,
 				8D1EAAFD1C33F52A00CD0182 /* BaseController.swift in Sources */,
 				8D1EAABE1C33DF0B00CD0182 /* AppDelegate.swift in Sources */,
+				874BECA71C35C355004C4BFB /* CDataScanner.m in Sources */,
 				8D1EAB031C33F5B900CD0182 /* Enum.swift in Sources */,
+				874BECA61C35C355004C4BFB /* MBProgressHUD.m in Sources */,
 				8D1EAAFF1C33F59900CD0182 /* Keys.swift in Sources */,
+				874BECAA1C35C355004C4BFB /* CJSONScanner.m in Sources */,
 				8D1EAB011C33F5AF00CD0182 /* Constant.swift in Sources */,
+				874BEC841C35AEF8004C4BFB /* BaseView.swift in Sources */,
+				874BECAB1C35C355004C4BFB /* CJSONSerializer.m in Sources */,
+				874BECA91C35C355004C4BFB /* CJSONDeserializer.m in Sources */,
+				874BECAF1C35C3BC004C4BFB /* PList.m in Sources */,
+				874BECA81C35C355004C4BFB /* CDataScanner_Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,10 +583,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: BLUE SKY OUTSOURCING LTD";
 				INFOPLIST_FILE = testProj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tenpearls.app.testProj;
+				PRODUCT_BUNDLE_IDENTIFIER = com.multimediaintl.salesforcez;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c6482fb3-f1ad-4c9b-8363-cbd319251015";
+				SWIFT_OBJC_BRIDGING_HEADER = "testProj/testProj-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -476,10 +597,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: BLUE SKY OUTSOURCING LTD";
 				INFOPLIST_FILE = testProj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tenpearls.app.testProj;
+				PRODUCT_BUNDLE_IDENTIFIER = com.multimediaintl.salesforcez;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c6482fb3-f1ad-4c9b-8363-cbd319251015";
+				SWIFT_OBJC_BRIDGING_HEADER = "testProj/testProj-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -550,6 +674,7 @@
 				8D1EAAE71C33DF0B00CD0182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D1EAAE81C33DF0B00CD0182 /* Build configuration list for PBXNativeTarget "testProjTests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +683,7 @@
 				8D1EAAEA1C33DF0B00CD0182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D1EAAEB1C33DF0B00CD0182 /* Build configuration list for PBXNativeTarget "testProjUITests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +692,7 @@
 				8D1EAAED1C33DF0B00CD0182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

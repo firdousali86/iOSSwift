@@ -40,4 +40,64 @@ class BaseController: UIViewController {
     }
     */
 
+    func getViewName() -> String{
+        
+        let file = self.description
+        
+        do{
+            if(!file.hasSuffix("Controller")){
+                try self.throwException(ControllerExceptions.InvalidClassName)
+            }
+        }
+        catch{
+            print("Invalid class name. Name should end with string 'controller' (e.g. SampleController)")
+        }
+        
+        return file.stringByReplacingOccurrencesOfString("Controller", withString: "View")
+    }
+    
+    func throwException(message : ControllerExceptions) throws -> String {
+        throw message
+    }
+    
+    /*
+    -(void)loadView:(NSString*)nib{
+    
+    if ([Utils isiPad]) {
+    //nib = [nib stringByAppendingString:@"~ipad"];
+    }
+    
+    if([[NSBundle mainBundle] pathForResource:nib ofType:@"nib"] == nil){
+    [self throwExceptioin:[NSString stringWithFormat:@"%@ nib/class not found in project.",nib]];
+    }
+    
+    UINib *nibs    = [UINib nibWithNibName:nib bundle:nil];
+    NSArray *array = [nibs instantiateWithOwner:nil options:nil];
+    if(array.count == 0){
+    [self throwExceptioin:[NSString stringWithFormat:@"%@ nib doesn't have any view (IB error)",nib]];
+    }
+    
+    if(![[array objectAtIndex:0] isKindOfClass:[BaseView class]]){
+    [self throwExceptioin:[NSString stringWithFormat:@"%@ nib should be subclass of %@ -> BaseView (IB error).",nib,nib]];
+    }
+    
+    BaseView *view  = (BaseView*)[array objectAtIndex:0];
+    view.controller = self;
+    self.view      = view;
+    }
+    */
+    
+    func loadView(var nib : String) throws {
+        if(Utils.isiPad()){
+            nib = nib.stringByAppendingString("~ipad");
+        }
+        
+        if(NSBundle.mainBundle().pathForResource(nib, ofType: "nib") == nil){
+            
+        }
+        
+        guard NSBundle.mainBundle().pathForResource(nib, ofType: "nib") != nil else {
+            throw ControllerExceptions.NoViewInNib
+        }
+    }
 }

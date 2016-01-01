@@ -8,14 +8,6 @@
 
 import UIKit
 
-//#define FILE_SUFFIX             @"Controller"
-//#define INVALID_CLASS_NAME      @"Invalid class name. Name should end with string 'controller' (e.g. SampleController)"
-//#define TYPE_VIEW               @"View"
-//#define TYPE_NIB                @"nib"
-//#define NIB_NOT_FOUND           @"%@ nib/class not found in project."
-//#define NIB_DOESNT_HAVE_VIEW    @"%@ nib doesn't have any view (IB error)"
-//#define NIB_SHOULD_BE_SUBCLASS  @"%@ nib should be subclass of %@ -> BaseView (IB error)."
-
 class BaseController: UIViewController {
 
     override func viewDidLoad() {
@@ -41,9 +33,7 @@ class BaseController: UIViewController {
     */
 
     func getViewName() -> String{
-        
         let file = self.description
-        
         do{
             if(!file.hasSuffix("Controller")){
                 try self.throwException(ControllerExceptions.InvalidClassName)
@@ -52,7 +42,6 @@ class BaseController: UIViewController {
         catch{
             print("Invalid class name. Name should end with string 'controller' (e.g. SampleController)")
         }
-        
         return file.stringByReplacingOccurrencesOfString("Controller", withString: "View")
     }
     
@@ -92,12 +81,22 @@ class BaseController: UIViewController {
             nib = nib.stringByAppendingString("~ipad");
         }
         
-        if(NSBundle.mainBundle().pathForResource(nib, ofType: "nib") == nil){
-            
+        guard NSBundle.mainBundle().pathForResource(nib, ofType: "nib") != nil else {
+            throw ControllerExceptions.NibNotFound
         }
         
-        guard NSBundle.mainBundle().pathForResource(nib, ofType: "nib") != nil else {
+        let nibs = UINib.init(nibName: nib, bundle: nil)
+        let array = nibs.instantiateWithOwner(nil, options: nil)
+        
+        guard array.count != 0 else {
             throw ControllerExceptions.NoViewInNib
         }
+        
+        guard let arr0 = array[0] as? BaseView else {
+            throw ControllerExceptions.NibNotSubClassOfBaseView
+        }
+        
+        let view : BaseView = array[0] as! BaseView
+
     }
 }

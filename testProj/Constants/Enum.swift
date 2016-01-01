@@ -11,5 +11,6 @@ import Foundation
 enum ControllerExceptions: ErrorType {
     case InvalidClassName
     case NoViewInNib
-    case OutOfStock
+    case NibNotFound
+    case NibNotSubClassOfBaseView
 }
